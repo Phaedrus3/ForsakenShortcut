@@ -28,11 +28,7 @@ namespace ForsakenShortcut
             Patches.ChangeObjects();
         }
 
-        public static void Aaa()
-        {
-            MelonLogger.Msg("Debug Log ========================== Aaa = ");
 
-        }
 
     }
 }
