@@ -6,6 +6,8 @@ namespace ForsakenShortcut
 {
     internal class Main : MelonMod
     {
+        public static bool BridgesAdded { get; set; } = false;
+
         public override void OnInitializeMelon()
         {
             Settings.OnLoad();/// ModSettings
