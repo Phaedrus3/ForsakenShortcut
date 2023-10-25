@@ -1,6 +1,4 @@
-using MelonLoader;
-using UnityEngine;
-
+using ForsakenShortcut.Utilities.Exceptions;
 
 namespace ForsakenShortcut
 {
