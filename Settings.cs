@@ -1,9 +1,9 @@
-using ModSettings;
-
 namespace ForsakenShortcut
 {
-    internal class ForsakenShortcut : JsonModSettings
+    internal class Settings : JsonModSettings
     {
+        public static Settings Instance { get; } = new();
+
         //Blackrock
         [Section("Forsaken Shortcut")]
 
@@ -11,25 +11,16 @@ namespace ForsakenShortcut
         [Description("Enable the Shorcut.")]
         public bool FASCEnable = false;
 
-
         protected override void OnConfirm()
         {
             base.OnConfirm();
 
-            Patches.ChangeObjects();
+            Main.AddRemoveBridges(Instance.FASCEnable);
         }
-
-    }
-
-    internal static class Settings
-    {
-        public static ForsakenShortcut options;
 
         public static void OnLoad()
         {
-            options = new ForsakenShortcut();
-            options.AddToModSettings("Forsaken Shortcut", MenuType.Both);
+            Instance.AddToModSettings("Forsaken Shortcut");
         }
     }
-
 }
