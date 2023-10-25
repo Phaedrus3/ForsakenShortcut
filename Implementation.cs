@@ -12,21 +12,23 @@ namespace ForsakenShortcut
         {
             Settings.OnLoad();/// ModSettings
             LoggerInstance.Msg($"Version {BuildInfo.Version}");
-
         }
 
-        public override void OnSceneWasInitialized(int level, string name)
+        public override void OnSceneWasInitialized(int buildIndex, string sceneName)
         {
-            if (name == "AirfieldRegion")
+            if (Settings.Instance.FASCEnable)
+            {
+                AddRemoveBridges(true);
+            }
+        }
+
+        {
             {
 
 
 
-            }
 
 
-            Patches.ChangeObjects();
-        }
 
 
 
