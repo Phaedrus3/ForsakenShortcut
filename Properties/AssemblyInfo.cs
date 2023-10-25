@@ -34,5 +34,5 @@ using MelonLoader;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0")]
 [assembly: AssemblyFileVersion("1.0.0")]
-[assembly: MelonInfo(typeof(ForsakenShortcut.Implementation), "ForsakenShortcut", "1.0.0", "Phaedrus, santana")]
+[assembly: MelonInfo(typeof(ForsakenShortcut.Main), "ForsakenShortcut", "1.1.0", "Phaedrus, santana, The Illusion")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
