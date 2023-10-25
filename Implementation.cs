@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ForsakenShortcut
 {
-    internal class Implementation : MelonMod
+    internal class Main : MelonMod
     {
         [Obsolete]
         public override void OnApplicationStart()
