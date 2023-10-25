@@ -6,8 +6,7 @@ namespace ForsakenShortcut
 {
     internal class Main : MelonMod
     {
-        [Obsolete]
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
             Settings.OnLoad();/// ModSettings
             LoggerInstance.Msg($"Version {BuildInfo.Version}");
